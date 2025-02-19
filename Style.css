@@ -1,0 +1,185 @@
+   /* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+
+    @font-face {
+      font-family: 'ATM 086';
+      src: url('https://drive.google.com/file/d/1nh8lcHK8BZyd4zxWYoJZcJv7jT9Vkys1/view?usp=drive_link') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+  }
+  
+  body {
+      font-family: 'ATM 086', sans-serif;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Section 1 & Section 2 */
+  .section1, .section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 0;
+  }
+  
+  .section1 img, .section2 img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Section 3 */
+  .section-3 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #FFF200;
+    color: #000;
+    overflow: hidden;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 5%;
+    z-index: 0;
+  }
+  
+  .content-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .text-content {
+    max-width: 50%;
+    color: #333;
+  }
+  
+  .text-content h1 {
+    font-size: 3.5rem;
+    font-weight: Extrabold;
+    color:#E0165E;
+    margin-bottom: 20px;
+	text-align: center;
+    font-family: "C:\Users\haris\OneDrive\Desktop\ATM 086.ttf";
+  
+  }
+  
+  .text-content p {
+    font-size: 2.8rem;
+    line-height: 1;
+    margin-left: 0px;
+  }
+  
+  .text-content h2 {
+    font-size: 2.8rem;
+    line-height: 1;
+	font-space-between:0.2rem;
+    margin-left: 0px;
+  }
+  
+   .text-content ul {
+    font-size: 2rem;
+    line-height: 1;
+    margin-left: 0px;
+  }
+  
+  .text-content ul {
+    margin-left: 40px;
+  }
+  
+  .text-content ul li {
+    margin-bottom: 10px;
+  }
+  
+  .image-container {
+    max-width: 35%;
+    margin-left: auto;
+    padding-right: 50px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+  .register-btn {
+    display: inline-block;
+    background-color: #6A0136;
+    color: #fff;
+    padding: 15px 30px;
+	align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+	font-family: sans-serif;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .register-btn:hover {
+    background-color: #900040;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      width: 90%;
+    }
+  
+    .content-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-content {
+      max-width: 100%;
+    }
+  
+    .image-container {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  }
+  
+/* Apply the font to the body */
+body {
+    font-family: 'ATM 086', sans-serif;
+}
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 0px;
+    }
+  
+    .text-content h1 {
+      font-size: 3rem;
+	  
+	  text-align: left;
+
+    }
+  
+    .text-content p, .text-content ul {
+      font-size: 2rem;
+    }
+  }
